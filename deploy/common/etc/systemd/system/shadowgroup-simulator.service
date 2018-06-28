@@ -1,0 +1,12 @@
+[Unit]
+Description=Shadowgroup simulator to test keycloak claim augmentation
+After=network.target
+
+[Service]
+Type=simple
+User=SOresource
+Group=SOresource
+ExecStart=/opt/runShadowgroupSimulator.sh
+
+[Install]
+WantedBy=multi-user.target
